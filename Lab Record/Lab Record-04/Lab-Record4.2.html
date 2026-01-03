@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Show or Hide
+    </title>
+    <style>
+        .hide {
+            display: none;
+        }
+
+        .highlight {
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <p id="text">Hello! This line can be shown or hidden.</p>
+    <button onclick="toggleShow()">Show / Hide</button>
+    <button onclick="toggleHighlight()">Highlight</button>
+    <script>
+        function toggleShow() {
+            document.getElementById("text").classList.toggle("hide");
+        }
+
+        function toggleHighlight() {
+            document.getElementById("text").classList.toggle("highlight");
+        }
+    </script>
+</body>
+</html>

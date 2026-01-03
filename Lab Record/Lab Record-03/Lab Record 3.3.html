@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Scope Demonstration</title>
+</head>
+
+<body>
+    <script>
+
+        var a = 10;
+        let b = 20;
+        const c = 30;
+        function showValues() {
+            var x = "inside function";
+
+            if (true) {
+                let y = "inside block";
+                const z = "also inside block";
+                document.write(y + '<br>');
+                document.write(z+ '<br>');
+            }
+            document.write(x+ '<br>');
+        }
+         showValues();
+        document.write(a+ '<br>',b+ '<br>',c+ '<br>');
+    </script>
+</body>
+
+</html>

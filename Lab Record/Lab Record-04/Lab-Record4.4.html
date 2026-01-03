@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Manipulate Elements</title>
+    </head>
+<body>
+<ul id="list">
+    <li>Item 1</li>
+</ul>
+<button onclick="addItem()">Add Item</button>
+<button onclick="removeItem()">Remove Last</button>
+<button onclick="changeItem()">Modify First</button>
+<script>
+function addItem() {
+    let newLi = document.createElement("li");
+    newLi.textContent = "New Item";
+    document.getElementById("list").appendChild(newLi);
+}
+function removeItem() {
+    let list = document.getElementById("list");
+    list.removeChild(list.lastElementChild);
+}
+function changeItem() {
+    let first = document.getElementById("list").firstElementChild;
+    first.textContent = "Updated Item 1";
+}
+</script>
+</body>
+</html>

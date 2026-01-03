@@ -1,0 +1,32 @@
+<html>
+<head>
+  <title>Registration Form</title>
+</head>
+<body>
+  <h1>Event Registration Form</h1>
+  <form action="/submit" method="post">
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label><br><br>
+    <label>Skills:</label><br>
+    <input type="checkbox" id="html" name="skills" value="HTML">
+    <label for="html">HTML</label><br>
+    <input type="checkbox" id="css" name="skills" value="CSS">
+    <label for="css">CSS</label><br>
+    <input type="checkbox" id="js" name="skills" value="JavaScript">
+    <label for="js">JavaScript</label><br><br>
+    <label for="city">Choose your city:</label><br>
+    <select id="city" name="city">
+      <option value="Durg">Durg</option>
+      <option value="Raipur">Raipur</option>
+      <option value="Bhilai">Bhilai</option>
+      <option value="Bilaspur">Bilaspur</option>
+    </select><br><br>
+    <input type="submit" value="Register">
+  </form>
+</body>
+</html>

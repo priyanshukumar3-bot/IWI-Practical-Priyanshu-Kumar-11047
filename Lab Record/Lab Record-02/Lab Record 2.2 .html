@@ -1,0 +1,55 @@
+<html>
+<head>
+  <title>Advanced CSS Styling</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('https://picsum.photos/1200/800');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .container {
+      width: 80%;
+      margin: 50px auto;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      border: 3px solid #333;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      padding: 10px;
+      border-bottom: 2px dashed #666;
+    }
+    .box {
+      background-color: #f0f8ff;
+      border: 2px solid #0077cc;
+      margin: 20px 0;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .box p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to My Styled Page</h1>
+    <div class="box">
+      <p><strong>Box Model:</strong> This box uses margin, padding, border, and background color. The `box-sizing: border-box` ensures padding and border are included in the total width.</p>
+    </div>
+    <div class="box">
+      <p><strong>Background Image:</strong> The page background is a full-screen image using `background-size: cover` and `background-position: center`.</p>
+    </div>
+    <div class="box">
+      <p><strong>Borders & Shadows:</strong> The container has a solid border, rounded corners, and a subtle shadow for depth.</p>
+    </div>
+  </div>
+</body>
+</html>

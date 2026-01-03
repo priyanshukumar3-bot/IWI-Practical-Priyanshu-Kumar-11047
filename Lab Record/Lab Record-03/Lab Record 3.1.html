@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Arithmetic Operations</title>
+</head>
+<body>
+    <script>
+    let a = Number(prompt("Enter first number:"));
+    let op = prompt("Enter operation (+, -, *, /):");
+    let b = Number(prompt("Enter second number:"));
+
+    let result;
+
+    if (op === "+") {
+        result = a + b;
+    } else if (op === "-") {
+        result = a - b;
+    } else if (op === "*") {
+        result = a * b;
+    } else if (op === "/") {
+        result = b !== 0 ? a / b : "Cannot divide by zero";
+    } else {
+        result = "Invalid operation";
+    }
+    
+    alert("Result = " + result);
+</script>
+
+</body>
+</html>

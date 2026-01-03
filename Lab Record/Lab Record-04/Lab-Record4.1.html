@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Dom Manipulation
+    </title>
+</head>
+<body>
+
+    <h2 id="title">Hello World</h2>
+    <p class="text">The Text is Here.</p>
+    <button onclick="update()">Click Me</button>        
+    <script>
+        function update() {
+            document.getElementById("title").innerHTML = "Title Updated!";
+
+            document.querySelector(".text").innerHTML = "Text changed using querySelector().";
+
+            document.querySelector("body").style.backgroundColor = "yellow";
+        }
+    </script>
+</body>
+</html>

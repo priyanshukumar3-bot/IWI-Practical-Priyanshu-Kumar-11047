@@ -1,0 +1,28 @@
+body {
+    background-color: floralwhite;
+}
+div{
+    width: 45rem;
+    height: 20rem;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 19px;
+    position: relative;
+    top:9rem;
+    left:25rem;
+    padding-top:92px;
+    background-color: lavenderblush;
+}
+.animated-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    transition: background-color 0.4s, transform 0.4s;
+}
+.animated-btn:hover {
+  background-color: #e74c3c;
+  transform: scale(1.2);
+}

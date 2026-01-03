@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return check()">
+  Name: <input id="n" oninput="live()"><br><br>
+  Email: <input id="e"><br><br>
+  <button>Submit</button>
+</form>
+
+<script>
+function live(){
+  if(n.value.length >= 3){
+    n.style.borderColor = "green";
+  } else {
+    n.style.borderColor = "red";
+  }
+}
+function check(){
+  if(n.value.length >= 3){
+  } else {
+    alert("Name too short");
+    return false;
+  }
+  if(e.value.includes("@")){
+  } else {
+    alert("Invalid email");
+    return false;
+  }
+  alert("Submitted!");
+  return true;
+}
+</script>
+
+</body>
+</html>

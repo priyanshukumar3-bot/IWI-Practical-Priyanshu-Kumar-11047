@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Card Layout Box Model Demo</title>
+  <link rel="stylesheet" href="styles1.css" />
+</head>
+<body>
+  <div class="card-grid" role="list">
+    <!-- Card 1 -->
+    <div class="card" role="listitem">
+      <div class="card-header">Card Title</div>
+      <div class="card-body">
+        <p>This card demonstrates the CSS box model:</p>
+        <ul>
+          <li><strong>Content:</strong> text and images inside the box</li>
+          <li><strong>Padding:</strong> space inside the border</li>
+          <li><strong>Border:</strong> the visible edge</li>
+          <li><strong>Margin:</strong> space outside the border</li>
+        </ul>
+      </div>
+      <div class="card-footer">
+        <a href="#" class="btn">Learn more</a>
+      </div>
+    </div>
+
+    <div class="card" role="listitem">
+      <div class="card-header">Second Card Title</div>
+      <div class="card-body">
+        <p>This card also shows the box model — padding, border, and margin are clearly visible.</p>
+      </div>
+      <div class="card-footer">
+        <a href="#" class="btn">Read more</a>
+      </div>
+    </div>
+
+    <div class="card" role="listitem">
+      <div class="card-header">Compact Card</div>
+      <div class="card-body">
+        <p>Use different padding or border thickness to compare spacing.</p>
+      </div>
+      <div class="card-footer">
+        <a href="#" class="btn">Details</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
